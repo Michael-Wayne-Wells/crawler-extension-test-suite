@@ -7,7 +7,7 @@ require './spec/feature_helper.rb'
 class Login
   include Capybara::DSL
   def initialize
-    @extension = 'chrome-extension://klcdegoacfelifmaemjfmfigienoannm/popup.html'
+    @extension = 'http://tilig-api:3000'
   end
 
   def login
@@ -17,7 +17,7 @@ class Login
 
     sleep 1
 
-    click_on 'Log in with Google'
+    click_on 'Sign in with Google'
   end
 end
 
