@@ -26,7 +26,7 @@ This test suite was built with the intenstion of testing the functionality of th
   - save account Modal
   - Autofill
 
-- programatically build crx file
+- ~~programatically build crx file~~
 - Integrate into Gitlab CI
 - Build out more comprehensive login url list(connect with json sites list?)
 - Build out sign-ups list
