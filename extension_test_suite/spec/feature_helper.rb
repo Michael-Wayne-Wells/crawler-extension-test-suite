@@ -10,6 +10,7 @@ options = Selenium::WebDriver::Chrome::Options.new
 # extension fails if ran headless
 options.add_argument('--disable-gpu')
 options.add_argument('--window-size=1280,800')
+
 options.add_extension(
   './dist.crx'
 )
