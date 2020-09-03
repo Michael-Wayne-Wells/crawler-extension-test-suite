@@ -8,10 +8,12 @@ require 'feature_helper'
       sleep 1
       click_on 'Sign in with Google'
     end
+
     scenario 'places logo in login' do
       visit url
       expect(page).to have_selector('div.subhq-subs-icon')
     end
+
     scenario 'places dropdown on login when selected' do
       visit url
       first('input[data-comsubshqforms]').click
@@ -20,6 +22,7 @@ require 'feature_helper'
       sleep 1
       expect(page).to have_content('Add to Tilig')
     end
+
     scenario 'opens save login modal if user does not have suggested password' do
       visit url
       first('input[data-comsubshqforms]').click
