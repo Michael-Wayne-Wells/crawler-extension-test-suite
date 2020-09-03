@@ -6,7 +6,7 @@ require 'feature_helper'
     before(:each) do
       visit 'http://tilig-api:3000'
       sleep 1
-    click_on 'Sign in with Google'
+      click_on 'Sign in with Google'
     end
     scenario 'places logo in login' do
       visit url
@@ -18,8 +18,19 @@ require 'feature_helper'
       sleep 1
       expect(page).to have_selector('div.subshq-dropdown-suggestions')
       sleep 1
-      expect(page).to have_content( 'Add to Tilig')
+      expect(page).to have_content('Add to Tilig')
     end
-    
+    scenario 'opens save login modal if user does not have suggested password' do
+      visit url
+      first('input[data-comsubshqforms]').click
+
+      sleep 1
+      find('a.subshq-button').click
+      sleep 2
+      expect(page).to have_content('Save Login')
+      expect(page).to have_content('Save')
+      expect(page).to have_content('Cancel')
+      expect(page).to have_selector('img.modal-logo')
+    end
   end
 end
