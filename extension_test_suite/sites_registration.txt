@@ -1,0 +1,10 @@
+https://twitter.com/i/flow/signup
+https://login.yahoo.com/account/create
+https://sso.godaddy.com/v1/account/create
+https://signup.live.com/
+https://accounts.google.com/signup
+https://appleid.apple.com/account#!&page=create
+https://hackerone.com/users/sign_up
+https://www.facebook.com/reg/
+https://www.twitch.tv/signup
+https://discord.com/register
