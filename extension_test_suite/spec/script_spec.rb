@@ -5,6 +5,7 @@ require 'feature_helper'
     before(:each) do
       visit 'http://tilig-api:3000'
       click_on 'Sign in with Google'
+      visit url
     end
 
     scenario 'places logo in login' do
