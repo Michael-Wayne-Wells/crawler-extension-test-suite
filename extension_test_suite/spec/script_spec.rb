@@ -7,8 +7,6 @@ require 'feature_helper'
       click_on 'Sign in with Google'
       visit url
     end
-    
-    
 
     scenario 'places dropdown on login when selected' do
       first('input[data-comsubshqforms]').click
