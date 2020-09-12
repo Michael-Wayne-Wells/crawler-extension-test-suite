@@ -7,11 +7,8 @@ require 'feature_helper'
       click_on 'Sign in with Google'
       visit url
     end
-
-    scenario 'places logo in login' do
-      visit url
-      expect(page).to have_selector('div.subhq-subs-icon')
-    end
+    
+    
 
     scenario 'places dropdown on login when selected' do
       first('input[data-comsubshqforms]').click
