@@ -1,5 +1,5 @@
 require 'feature_helper'
-@sites = File.read('sites.txt').split
+@sites = File.read('sites_registration.txt').split
 @sites.each do |url|
   RSpec.feature "#{url} - Extension script" do
     before(:each) do
@@ -14,7 +14,7 @@ require 'feature_helper'
       expect(page).to have_content('Add to Tilig')
     end
 
-    scenario 'open save login modal if user does not have suggested password' do
+    scenario 'open register login modal if user does not have suggested password' do
       first('input[data-comsubshqforms]').click
       find('a.subshq-button').click
       expect(page).to have_content('Save Login')
