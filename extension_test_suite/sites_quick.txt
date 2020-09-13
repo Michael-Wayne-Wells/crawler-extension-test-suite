@@ -1,0 +1,13 @@
+https://mail.protonmail.com/login
+https://login.yahoo.com/
+https://sso.godaddy.com/
+https://login.live.com/
+https://accounts.google.com/signin
+https://appleid.apple.com/
+https://hackerone.com/users/sign_in
+https://www.facebook.com/
+https://zoom.us/signin
+https://www.netflix.com/login
+https://twitter.com/login
+https://www.twitch.tv/login
+https://discord.com/login
