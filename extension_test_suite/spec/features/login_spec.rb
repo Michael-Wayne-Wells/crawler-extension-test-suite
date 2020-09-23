@@ -4,7 +4,7 @@ require 'feature_helper'
   RSpec.feature "#{url} - Extension script" do
     before(:each) do
       visit 'http://tilig-api:3000'
-      click_on 'Sign in with Google'
+      click_on 'Continue with Google'
       visit url
     end
 

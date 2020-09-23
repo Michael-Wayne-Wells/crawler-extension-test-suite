@@ -17,7 +17,7 @@ class Login
 
     sleep 1
 
-    click_on 'Sign in with Google'
+    click_on 'Continue with Google'
   end
 end
 
