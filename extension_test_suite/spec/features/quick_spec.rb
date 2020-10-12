@@ -2,9 +2,9 @@ require 'feature_helper'
 @sites = File.read('sites_quick.txt').split
 @sites.each do |url|
   RSpec.feature "#{url} - Exitension script load" do
-    scenario 'places logo in login' do
+    scenario 'places form-sig on login forms and fields' do
       visit url
-      expect(page).to have_selector('div.subhq-subs-icon')
+      expect(page).to have_selector('[data-comsubshqforms]')
     end
   end
 end
