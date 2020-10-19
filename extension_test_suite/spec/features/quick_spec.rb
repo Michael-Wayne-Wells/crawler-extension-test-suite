@@ -6,5 +6,9 @@ require 'feature_helper'
       visit url
       expect(page).to have_selector('[data-comsubshqforms]')
     end
+    scenario 'injects watcher script' do
+      visit url
+      expect(page).to have_selector('#subshqwatcherscript', visible: false)
+    end
   end
 end

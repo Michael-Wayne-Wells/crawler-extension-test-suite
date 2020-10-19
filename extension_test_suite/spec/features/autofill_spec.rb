@@ -9,8 +9,7 @@ require 'feature_helper'
     end
 
     scenario 'autofills username' do
-      sleep 1
-      expect(page).to have_selector("input[value='mikey@tilig.com']")
+      expect(page).to have_selector("input[value='mikey@tilig.com']", wait: 5)
     end
 
     scenario 'places dropdown of suggestions if user clicks login field' do
